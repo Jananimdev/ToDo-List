@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<div class="container">
+  <div id="myDIV" class="header">
+    <h2 style="margin:5px">TODos of Janani</h2>
+    <h3>You can always change your plan, but only if you have one. ...</h3>
+    <div class="input-container">
+      <input type="text" id="myInput" placeholder="Task...">
+      <input type="date" id="taskDate">
+      <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+  </div>
+  <hr class="my-4">
+
+  <div class="d-flex justify-content-end align-items-center mb-4 pt-2 pb-3">
+    <a href="#!" style="color: #23af89;" data-mdb-toggle="tooltip" title="Ascending">
+      <i class="fas fa-sort-amount-down-alt ms-2"></i>
+    </a>
+  </div>
+
+  <ul id="myUL">
+    <li>
+      <span>Travelling to the home</span>
+      <span class="editBtn" onclick="editTask(this)">Edit</span>
+      <span class="deleteBtn" onclick="deleteTask(this)">Delete</span>
+    </li>
+    <!-- Add more tasks here -->
+  </ul>
+</div>
+<div class="logout-container">
+  <button onclick="logout()" class="logoutBtn">Logout</button>
+</div>
+
+
+<script src="js.js"></script>
+<!-- Add your JavaScript code for logout function here -->
+
+
+</body>
+</html>
+
